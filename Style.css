@@ -1,4 +1,8 @@
 .imgPizzeria {
   object-fit: fill;
-  width: 500px;
+  width: 100%;
+  height: 550px;
+}
+.divPizzeria {
+  width: 100%;
 }
