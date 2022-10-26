@@ -10,6 +10,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
     crossorigin="anonymous"
   />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -79,17 +80,18 @@
       </svg></span>
     </div>
   </div>
-  <div class="container productoSection">
+  <div id="productos" class="container productoSection">
     <div class="row">
       <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
+        <div  vfor= "producto in listaProductos" class="row g-0">
           <div class="col-md-4">
-            <img src="/img/pizzaCalabreza.jpg" class="img-fluid rounded-start" alt="...">
+            <img src={{producto.img}} class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">{{producto.Nombre}}</h5>
+              <p class="card-text">{{producto.Ingredientes}} + " "+ {{producto.Porciones}}</p>
+              <p>{{producto.Precio}}</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
