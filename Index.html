@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<script  src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <head>
   <title>Pizzeria Lorenzini's</title>
+  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/Style.css" type="text/css" />
@@ -10,7 +12,9 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
     crossorigin="anonymous"
   />
-  <script type="module" src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+  
+  
+   
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -21,7 +25,7 @@
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"
   ></script>
-  <script src="script.js" ></script>
+  
 </head>
 <body>
   <div id="navbar">
@@ -81,23 +85,26 @@
     </div>
   </div>
   <div id="productos" class="container productoSection">
-    <div class="row">
+    <div v-for="producto in listaProducto" class="row">
       <div class="card mb-3" style="max-width: 540px;">
-        <div  vfor= "producto in listaProductos" class="row g-0">
+        <div   class="row g-0">
           <div class="col-md-4">
-            <img src={{producto.img}} class="img-fluid rounded-start" alt="...">
+            <img src="producto.img" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">{{producto.Nombre}}</h5>
-              <p class="card-text">{{producto.Ingredientes}} + " "+ {{producto.Porciones}}</p>
-              <p>{{producto.Precio}}</p>
+            <div   class="card-body">
+              <h5 class="card-title">{{ producto.Nombre }}</h5>
+              <p class="card-text">{{ producto.Ingredientes }} </p>
+              <p><strong>$ {{ producto.Precio}}</strong></p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    
   </div>
+
+
 </body>
+<script src="script.js" ></script>
