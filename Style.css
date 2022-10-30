@@ -2,19 +2,26 @@
   object-fit: fill;
   width: 100%;
   height: 550px;
-  box-shadow: -2px 4px 40px 0px rgba(84,77,77,0.75);
--webkit-box-shadow: -2px 4px 40px 0px rgba(84,77,77,0.75);
--moz-box-shadow: -2px 4px 40px 0px rgba(84,77,77,0.75);
+  box-shadow: -2px 4px 40px 0px rgba(84, 77, 77, 0.75);
+  -webkit-box-shadow: -2px 4px 40px 0px rgba(84, 77, 77, 0.75);
+  -moz-box-shadow: -2px 4px 40px 0px rgba(84, 77, 77, 0.75);
 }
 .divPizzeria {
   width: 100%;
-  
 }
 
 .second-part {
   padding-top: 2%;
 }
-.productoSection{
+.productoSection {
   padding-top: 2%;
-  padding-right: 1%;
+}
+
+.productoRow {
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-top: 1% !important;
+  box-shadow: -2px 4px 40px 0px rgba(179, 172, 172, 0.75);
+  -webkit-box-shadow: -2px 4px 40px 0px rgba(179, 172, 172, 0.75);
+  -moz-box-shadow: -2px 4px 40px 0px rgba(179, 172, 172, 0.75);
 }

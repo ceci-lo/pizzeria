@@ -84,12 +84,14 @@
       </svg></span>
     </div>
   </div>
+
   <div id="productos" class="container productoSection">
-    <div v-for="producto in listaProducto" class="row">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div   class="row g-0">
+   
+    <div class="row">
+      <div class="card col-6 productoRow" style="max-width: 500px" v-for="producto in listaProducto">
+        <div class="row g-0">
           <div class="col-md-4">
-            <img src="producto.img" class="img-fluid rounded-start" alt="...">
+            <img src="/img/pizzaCalabreza.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div   class="card-body">
@@ -101,8 +103,9 @@
           </div>
         </div>
       </div>
+
+     
     </div>
-    
   </div>
 
 
