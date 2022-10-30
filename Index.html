@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<script  src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<head>
+  <title>Pizzeria Lorenzini's</title>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/Style.css" type="text/css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+  
+  
+   
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"
+  ></script>
+  
+</head>
+<body>
+  <div id="navbar">
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container">
+        <a class="navbar-brand" href="#">Pizzeria Lorenzini</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Carta</a>
+            </li>
+          </ul>
+          <div class="container">
+            <div class="row">
+              <div class="col-3 btn-group offset-8" role="group">
+                <button type="button" class="btn btn-outline-dark">
+                  <a class="nav-link" href="#">Sign in</a>
+                </button>
+                <button type="button" class="btn btn-dark">
+                  <a class="nav-link">Sing up</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="divPizzeria">
+    <img
+      src="/img/pizza.jpg"
+      alt="pizzeria lorenzini imagen principal"
+      class="imgPizzeria"
+    />
+  </div>
+  <div class="container second-part">
+    <div class="input-group">
+      <input type="text" class="form-control" >
+    </input>
+    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></span>
+    </div>
+  </div>
+  <div id="productos" class="container productoSection">
+    <div v-for="producto in listaProducto" class="row">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div   class="row g-0">
+          <div class="col-md-4">
+            <img src="producto.img" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div   class="card-body">
+              <h5 class="card-title">{{ producto.Nombre }}</h5>
+              <p class="card-text">{{ producto.Ingredientes }} </p>
+              <p><strong>$ {{ producto.Precio}}</strong></p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+</body>
+<script src="script.js" ></script>
