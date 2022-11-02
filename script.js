@@ -1,4 +1,6 @@
+
 const { createApp } = Vue;
+
 
 createApp({
   data() {
@@ -59,8 +61,12 @@ createApp({
           img: "img/pizzaToscana",
         },
       ],
-    };
-  } /*,
+      
+       
+      };
+  }
+
+ /*,
   methods:
    {
         
@@ -75,4 +81,4 @@ createApp({
 mounted: function(){
    this.getProducto();
 }*/,
-}).mount("#productos");
+}).mount("#productos")
