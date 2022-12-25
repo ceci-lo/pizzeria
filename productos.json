@@ -1,48 +1,51 @@
-[{
-"Nombre": "Pizza Calabreza",
-"Ingredientes":  "Salsa de tomate, oregano, muzarella, Calabreza y aceitunas",
-"Porciones": "8 porciones",
-"Precio": "2050",
-"img": "img/pizzaCalabreza"
-},
-{
+[
+  {
+    "Nombre": "Pizza Calabreza",
+    "Ingredientes": "Salsa de tomate, oregano, muzarella, Calabreza y aceitunas",
+    "Porciones": "8 porciones",
+    "Precio": "2050",
+    "img": "img/pizzaCalabreza"
+  },
+  {
     "Nombre": "Pizza Cuatro Quesos",
-    "Ingredientes":  "Salsa de tomate, Holanda, muzarella, Roquefort y queso parmesano",
+    "Ingredientes": "Salsa de tomate, Holanda, muzarella, Roquefort y queso parmesano",
     "Porciones": "8 porciones",
     "Precio": "2150",
     "img": "img/pizzaCuatroQuesos"
-    },
-    {
-        "nombre": "Pizza Especial",
-        "Ingredientes":  "Salsa de tomate, muzarella, jamon cocido  y morrones",
-        "Porciones": "8 porciones",
-        "Precio": "1900",
-        "img": "img/pizzaEspecial"
-    },
-    {
-            "nombre": "Pizza Margaritha",
-            "Ingredientes":  "Salsa de tomate, muzarella, Tomate cubeteado y alabahaca",
-            "Porciones": "8 porciones",
-            "Precio": "1900",
-            "img": "img/pizzaMargarita"
-     },
-     {
-        "nombre": "Pizza Napolitana",
-        "Ingredientes":  "Salsa de tomate, rodajas de Tomate, oregano y aceitunas negras",
-        "Porciones": "8 porciones",
-        "Precio": "1500",
-        "img": "img/pizzaNapolitana"
- },
- {
+  },
+  {
+    "nombre": "Pizza Especial",
+    "Ingredientes": "Salsa de tomate, muzarella, jamon cocido  y morrones",
+    "Porciones": "8 porciones",
+    "Precio": "1900",
+    "img": "img/pizzaEspecial"
+  },
+  {
+    "nombre": "Pizza Margaritha",
+    "Ingredientes": "Salsa de tomate, muzarella, Tomate cubeteado y alabahaca",
+    "Porciones": "8 porciones",
+    "Precio": "1900",
+    "img": "img/pizzaMargarita"
+  },
+  {
+    "nombre": "Pizza Napolitana",
+    "Ingredientes": "Salsa de tomate, rodajas de Tomate, oregano y aceitunas negras",
+    "Porciones": "8 porciones",
+    "Precio": "1500",
+    "img": "img/pizzaNapolitana"
+  },
+  {
     "nombre": "Pizza Pepperoni",
-    "Ingredientes":  "Salsa de tomate, muzarella, peperoni",
+    "Ingredientes": "Salsa de tomate, muzarella, peperoni",
     "Porciones": "8 porciones",
     "Precio": "1900",
     "img": "img/pizzaPepperoni"
-},{
+  },
+  {
     "nombre": "Pizza Toscana",
-    "Ingredientes":  "Salsa de tomate, muzarella, rucula, jamon crudo, tomates cherrys y aceitunas negras",
+    "Ingredientes": "Salsa de tomate, muzarella, rucula, jamon crudo, tomates cherrys y aceitunas negras",
     "Porciones": "8 porciones",
     "Precio": "2500",
     "img": "img/pizzaToscana"
-}]
+  }
+]
