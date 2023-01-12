@@ -66,13 +66,14 @@
         </div>
       </nav>
     </div>
-    <div>
-      <div class="container">
-       
-          <div class="row">
-            <div class="col-6 offset-3">
-              <label for="exampleDataList" class="form-label">Email</label>
-              <div class="col-6">
+    <div class="log d-flex align-items-center">
+      <div class="container ">
+            
+          <div class="row ">
+            <div class="col-5 offset-3 log-form shadow p-3 mb-5 bg-body-tertiary rounded">
+              <h3 class="col-6 offset-4">Ingresar</h3>
+              <label for="exampleDataList" class="form-label col-6 offset-3">Email</label>
+              <div class="col-6 offset-3">
                 <label for="email" class="visually-hidden"></label>
                 <input
                   type="password"
@@ -81,8 +82,8 @@
                   placeholder="email@example.com"
                 />
               </div>
-              <label for="exampleDataList" class="form-label">Contraseña</label>
-              <div class="col-6">
+              <label for="exampleDataList" class="form-label col-6 offset-3">Contraseña</label>
+              <div class="col-6 offset-3 ">
                 <label for="inputPassword2" class="visually-hidden"
                   >Password</label
                 >
@@ -93,8 +94,13 @@
                   placeholder="Password"
                 />
               </div>
-           
-            <div class="col-md-8">
+              <div class="form-check col-6 offset-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Mostrar Contraseña
+                </label>
+              </div>
+            <div class="col-4 offset-6 log-bottom ">
               <button type="submit" class="btn btn-primary">Confirmar</button>
             </div> </div>
           </div>

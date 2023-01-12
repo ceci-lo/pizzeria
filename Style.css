@@ -26,16 +26,14 @@
   -moz-box-shadow: -2px 4px 40px 0px rgba(179, 172, 172, 0.75);
 }
 
-.footer{
+.footer {
   padding: 50px;
   text-align: center;
 }
 
-.estiquetaA{
+.estiquetaA {
   padding-right: 10px;
 }
-
-
 
 .modal-mask {
   position: fixed;
@@ -76,4 +74,15 @@
 
 .modal-default-button {
   float: right;
+}
+
+.log {
+  height: 500px;
+}
+.log-form {
+  height: 300px;
+}
+
+.log-bottom {
+  padding-top: 2%;
 }
