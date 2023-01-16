@@ -1,7 +1,4 @@
-
 const { createApp } = Vue;
-
-
 createApp({
   data() {
     return {
@@ -61,12 +58,10 @@ createApp({
           img: "img/pizzaToscana",
         },
       ],
-      
-       
-      };
-  }
+    };
+  },
 
- /*,
+  /*,
   methods:
    {
         
@@ -80,5 +75,15 @@ createApp({
 },
 mounted: function(){
    this.getProducto();
-}*/,
-}).mount("#productos")
+}*/
+}).mount("#productos");
+
+function password() {
+  let show = document.getElementById("inputPassword2");
+
+  if (show.type == "password") {
+    show.type = "text;";
+  } else {
+    show.type = "password";
+  }
+}
