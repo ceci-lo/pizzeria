@@ -69,7 +69,37 @@
       </div>
     </nav>
   </div>
- 
+  <div class="container">
+    
+    <div class="row col-4 offset-4 reg-form d-flex align-content-between flex-wraps"> 
+  <h3 class="col-6" >Registrarse</h3>
+
+  <label for="exampleDataList" class="form-label log-bottom">Nombre</label>
+  <input class="form-control " list="datalistOptions" id="exampleDataList" placeholder="Nombre">
+
+  <label for="exampleDataList" class="form-label log-bottom">Apellido</label>
+  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Apellido">
+
+  <label for="exampleDataList" class="form-label log-bottom">Ciudad</label>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Selecciona una sucursal</option>
+    <option value="1">Santa Fe</option>
+    <option value="2">Santo tome</option>
+    <option value="3">Paraná</option>
+  </select>
+
+  <label for="exampleDataList" class="form-label log-bottom">Direccion de envio</label>
+  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Direccion">
+
+<label for="exampleDataList" class="form-label log-bottom">Email</label>
+  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escriba su mail">
+
+  <label for="exampleDataList" class="form-label log-bottom">Contraseña</label>
+  <input class="form-control reg-bottom" type="password" list="datalistOptions" id="exampleDataList" placeholder="Contraseña" onclick="password()">
   
+  <button type="button" class="btn btn-danger col-6 offset-3 ">Registrarse</button>
+
+    </div>
+</div>
   </body>
 </html>
