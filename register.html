@@ -1,47 +1,33 @@
+<!DOCTYPE html>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <!DOCTYPE html>
-<script  src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <head>
   <title>Pizzeria Lorenzini's</title>
-  
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/Style.css" type="text/css" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-    crossorigin="anonymous"
-  />
-  
-  
-   
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-    crossorigin="anonymous"
-  ></script>
-  
+    crossorigin="anonymous"></script>
+
 </head>
+
 <body>
   <div id="navbar">
     <nav class="navbar navbar-expand-lg bg-danger">
       <div class="container">
         <a class="navbar-brand" href="Index.html">Pizzeria Lorenzini</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -70,36 +56,52 @@
     </nav>
   </div>
   <div class="container">
-    
-    <div class="row col-4 offset-4 reg-form d-flex align-content-between flex-wraps"> 
-  <h3 class="col-6" >Registrarse</h3>
 
-  <label for="exampleDataList" class="form-label log-bottom">Nombre</label>
-  <input class="form-control " list="datalistOptions" id="exampleDataList" placeholder="Nombre">
+    <div class="row col-4 offset-4 reg-form d-flex align-content-between flex-wraps">
+      <h3 class="col-6">Registrarse</h3>
 
-  <label for="exampleDataList" class="form-label log-bottom">Apellido</label>
-  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Apellido">
+      <label for="exampleDataList" class="form-label log-bottom">Nombre</label>
+      <input class="form-control " list="datalistOptions" id="exampleDataList" placeholder="Nombre">
 
-  <label for="exampleDataList" class="form-label log-bottom">Ciudad</label>
-  <select class="form-select" aria-label="Default select example">
-    <option selected>Selecciona una sucursal</option>
-    <option value="1">Santa Fe</option>
-    <option value="2">Santo tome</option>
-    <option value="3">Paraná</option>
-  </select>
+      <label for="exampleDataList" class="form-label log-bottom">Apellido</label>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Apellido">
 
-  <label for="exampleDataList" class="form-label log-bottom">Direccion de envio</label>
-  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Direccion">
+      <label for="exampleDataList" class="form-label log-bottom">Ciudad</label>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Selecciona una sucursal</option>
+        <option value="1">Santa Fe</option>
+        <option value="2">Santo tome</option>
+        <option value="3">Paraná</option>
+      </select>
 
-<label for="exampleDataList" class="form-label log-bottom">Email</label>
-  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escriba su mail">
+      <label for="exampleDataList" class="form-label log-bottom">Direccion de envio</label>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Direccion">
 
-  <label for="exampleDataList" class="form-label log-bottom">Contraseña</label>
-  <input class="form-control reg-bottom" type="password" list="datalistOptions" id="exampleDataList" placeholder="Contraseña" onclick="password()">
-  
-  <button type="button" class="btn btn-danger col-6 offset-3 ">Registrarse</button>
+      <label for="exampleDataList" class="form-label log-bottom">Email</label>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escriba su mail">
 
+      <label for="exampleDataList" class="form-label log-bottom">Contraseña</label>
+      <input class="form-control reg-bottom" type="password" list="datalistOptions" id="exampleDataList"
+        placeholder="Contraseña" onclick="password()">
+
+      <button type="button" class="btn btn-danger col-6 offset-3 " data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop">Registrarse</button>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-body">
+              Usted se ha registrado correctamente
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="location.href = '/login.html';">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-  </body>
+  </div>
+</body>
+
 </html>

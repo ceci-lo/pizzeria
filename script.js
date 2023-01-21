@@ -87,3 +87,4 @@ function password() {
     show.type = "password";
   }
 }
+
