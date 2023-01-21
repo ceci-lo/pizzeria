@@ -20,42 +20,42 @@ createApp({
           img: "img/pizzaCuatroQuesos.jpg",
         },
         {
-          nombre: "Pizza Especial",
+          Nombre: "Pizza Especial",
           Ingredientes: "Salsa de tomate, muzarella, jamon cocido  y morrones",
           Porciones: "8 porciones",
           Precio: "1900",
-          img: "img/pizzaEspecial",
+          img: "img/pizzaEspecial.jpg",
         },
         {
-          nombre: "Pizza Margaritha",
+          Nombre: "Pizza Margaritha",
           Ingredientes:
             "Salsa de tomate, muzarella, Tomate cubeteado y alabahaca",
           Porciones: "8 porciones",
           Precio: "1900",
-          img: "img/pizzaMargarita",
+          img: "img/pizzaMargarita.jpg",
         },
         {
-          nombre: "Pizza Napolitana",
+          Nombre: "Pizza Napolitana",
           Ingredientes:
             "Salsa de tomate, rodajas de Tomate, oregano y aceitunas negras",
           Porciones: "8 porciones",
           Precio: "1500",
-          img: "img/pizzaNapolitana",
+          img: "img/pizzaNapolitana.jpg",
         },
         {
-          nombre: "Pizza Pepperoni",
+          Nombre: "Pizza Pepperoni",
           Ingredientes: "Salsa de tomate, muzarella, peperoni",
           Porciones: "8 porciones",
           Precio: "1900",
-          img: "img/pizzaPepperoni",
+          img: "img/pizzaPepperoni.webp",
         },
         {
-          nombre: "Pizza Toscana",
+          Nombre: "Pizza Toscana",
           Ingredientes:
             "Salsa de tomate, muzarella, rucula, jamon crudo, tomates cherrys y aceitunas negras",
           Porciones: "8 porciones",
           Precio: "2500",
-          img: "img/pizzaToscana",
+          img: "img/pizzaToscana.jpg",
         },
       ],
     };
