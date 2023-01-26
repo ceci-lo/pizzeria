@@ -76,7 +76,7 @@
       <div class="card col-6 productoRow" style="max-width: 500px" v-for="producto in listaProducto">
         <div class="row g-0">
           <div class="col-md-4">
-            <img :src=producto.img class="img-fluid rounded-start" alt="...">
+            <img :src=producto.img class="img-fluid img-card" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -86,7 +86,30 @@
               <div>
                 <a href="#" class="estiquetaA">ver más</a>
 
-                <button type="button" class="btn btn-danger">+</button>
+                <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">+</button>
+                <!--modal boton +-->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">{{producto.Nombre}}</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <p>Unidades</p><button>-</button><p>{{counter}}</p><button @click="increment()">+</button>
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Nota para producto</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Aceptar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <p class="card-text"><small class="text-muted">Envio en 30-40 min</small></p>
             </div>

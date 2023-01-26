@@ -1,4 +1,5 @@
 const { createApp } = Vue;
+
 createApp({
   data() {
     return {
@@ -87,4 +88,3 @@ function password() {
     show.type = "password";
   }
 }
-

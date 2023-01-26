@@ -92,3 +92,7 @@
 .reg-bottom {
   margin-bottom: 15px;
 }
+.img-card {
+  object-fit: fill !important;
+  height: 230px !important;
+}
