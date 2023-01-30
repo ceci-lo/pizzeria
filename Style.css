@@ -96,3 +96,6 @@
   object-fit: fill !important;
   height: 230px !important;
 }
+.cantidad {
+  width: 5%;
+}
