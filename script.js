@@ -88,3 +88,12 @@ function password() {
     show.type = "password";
   }
 }
+let count = 0;
+let cantidad;
+function aumentar() {
+  cantidad = document.getElementById("cantidad").value = count++;
+}
+function disminuir() {
+  cantidad = document.getElementById("cantidad").value = count--;
+}
+console.log(count);

@@ -97,7 +97,7 @@
                       </div>
                       <div class="modal-body">
                         <div class="mb-3">
-                          <p>Unidades</p><button>-</button><p>{{counter}}</p><button @click="increment()">+</button>
+                          <p>Unidades</p><button id="disminuir" onclick="disminuir()">-</button><input type="text" value ="0" id="cantidad"/><button id="aumentar" onclick="aumentar()">+</button>
                         </div>
                         <div class="mb-3">
                           <label for="message-text" class="col-form-label">Nota para producto</label>
