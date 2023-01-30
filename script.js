@@ -94,6 +94,6 @@ function aumentar() {
   cantidad = document.getElementById("cantidad").value = count++;
 }
 function disminuir() {
-  cantidad = document.getElementById("cantidad").value = count--;
+  cantidad = document.getElementById("cantidad").value = --count;
 }
 console.log(count);
