@@ -104,11 +104,13 @@ let vistaPedido = {
 };
 
 let unidadPedida = 0;
+let notaPedido = "";
 let pedido = () =>{
-  
-  unidadPedida = document.getElementById("cantidad").value;
 
+  unidadPedida = document.getElementById("cantidad").value;
+  notaPedido = document.getElementById("message-text").value;
   vistaPedido.unidades = unidadPedida;
+  vistaPedido.nota = notaPedido;
   
 }
 console.log(pedido());
