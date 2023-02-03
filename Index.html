@@ -96,6 +96,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
+                        <div>
+                          <p>{{producto.Ingredientes}}</p>
+                        </div>
                         <div class="mb-3">
                           <p>Unidades</p><button id="disminuir" onclick="disminuir()" class="btn btn-danger">-</button><input class="cantidad" type="text" value ="0" id="cantidad"/><button class="btn btn-danger" id="aumentar" onclick="aumentar()">+</button>
                         </div>
@@ -105,7 +108,7 @@
                         </div>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Aceptar</button>
+                        <button type="button" class="btn btn-primary" onclick="pedido()">Aceptar</button>
                       </div>
                     </div>
                   </div>

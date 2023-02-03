@@ -90,10 +90,25 @@ function password() {
 }
 let count = 0;
 let cantidad;
+
 function aumentar() {
-  cantidad = document.getElementById("cantidad").value = count++;
+  cantidad = document.getElementById("cantidad").value = ++count;
 }
 function disminuir() {
   cantidad = document.getElementById("cantidad").value = --count;
 }
-console.log(count);
+
+let vistaPedido = {
+  unidades : 0,
+  nota : "ninguna"
+};
+
+let unidadPedida = 0;
+let pedido = () =>{
+  
+  unidadPedida = document.getElementById("cantidad").value;
+
+  vistaPedido.unidades = unidadPedida;
+  
+}
+console.log(pedido());
